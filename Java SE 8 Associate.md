@@ -77,6 +77,63 @@ public void m1(){    //Method opeing
    int x = 10;       //Method local variable
 }                   //Method cloding       
 ```
-        
+
+```java
+public void m1(){ //method - opening
+    int x = 10;
+    
+    if (x >=10) { //if - opening
+        int y = 50; //if local variable
+        System.out.print(y);
+    }  //if - closing
+} //method - closing
+```
+#### Cuidado con los fors
+
+```java
+for (int i=0, j=0; i<10; i++)
+    j++
+System.out.print(j); //compilation error
+```
+
+#### Paramétro de un método
+
+```java
+class Test m1(String e){
+    public void m1(String e);
+}
+
+public void m2(){
+      System.out.print(e); //compilation error
+}
+
+```
+
+#### Variables de intancia
+```java
+class Person {
+    //intance or object variable
+    String name;
+    
+    public void setName(String n){
+        //explicit (this) intance variable access
+        this name = n;
+    }
+}
+```
+
+
+#### Variables estáticas
+```java
+class Person {
+    static int id = 15;
+}
+
+class Test {
+    public static void main([] args){
+        Person 
+    }
+}
+```
     
 
